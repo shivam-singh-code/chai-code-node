@@ -15,6 +15,7 @@ const uploadOnCloudnary = (localFilePath) => {
       resource_type: "auto",
     });
     // File uploaded successfully
+    console.log("file is uploaded on cloudnary full response", response);
     console.log("file is uploaded on cloudnary", response.url);
     return response;
   } catch (error) {
